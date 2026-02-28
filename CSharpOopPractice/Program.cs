@@ -1,29 +1,16 @@
-﻿namespace Classes
+﻿namespace CSharpIntermediate
 {
-    public class Person
-    {
-        public string Name = "";
-
-        public void Introduce(string to)
-        {
-            Console.WriteLine("Hi {0}, I am {1}", to, Name);
-        }
-
-        public static Person Parse(string str)
-        {
-            Person person = new Person();
-            person.Name = str;
-
-            return person;
-        }
-    }
 
     class Program
     {
         static void Main(string[] args)
         {
             Person person = Person.Parse("test");
-            person.Introduce("guy");
+            person.Introduce("person");
+            Customer customer = new Customer(2, "person who shops");
+
+            Console.WriteLine(customer.Id + " " + customer.Name);
+            Console.WriteLine(customer.Orders.Count);
         }
     }
 }
