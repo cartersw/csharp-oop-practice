@@ -3,6 +3,8 @@ namespace CSharpIntermediate
     public class Person
     {
         public string Name = "";
+        public string FavoriteColor = "";
+        public string Nickname = "";
 
         public void Introduce(string to)
         {
