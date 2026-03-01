@@ -21,6 +21,11 @@
 
             Console.WriteLine("2nd person fav color is " + person1.FavoriteColor);
 
+            int result = WeirdCalculator.Add(1, 2, 3, 4);
+            Console.WriteLine(result);
+
+
+
         }
     }
 }
