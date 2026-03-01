@@ -4,8 +4,11 @@ namespace CSharpIntermediate
     {
         public static int Add(params int[] numbers)
         {
-            string num = string.Join("", numbers);
-            return int.Parse(num);
+            if(numbers.Length > 0){
+                string num = string.Join("", numbers);
+                return int.Parse(num);
+            }
+            return 0;
         }
     }
 }

@@ -24,6 +24,9 @@
             int result = WeirdCalculator.Add(1, 2, 3, 4);
             Console.WriteLine(result);
 
+            int result1 = WeirdCalculator.Add();
+            Console.WriteLine(result1);
+
 
 
         }
