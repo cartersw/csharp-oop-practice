@@ -49,6 +49,20 @@ namespace CSharpIntermediate
             }
 
 
+            int number;
+
+            var result = int.TryParse("abc", out number);
+
+            if (result)
+            {
+                Console.WriteLine(number);
+            }
+            else
+            {
+                Console.WriteLine("Conversion failed");
+            }
+
+
 
         }
     }
