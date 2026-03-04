@@ -51,9 +51,9 @@ namespace CSharpIntermediate
 
             int number;
 
-            var result = int.TryParse("abc", out number);
+            var res = int.TryParse("abc", out number);
 
-            if (result)
+            if (res)
             {
                 Console.WriteLine(number);
             }
