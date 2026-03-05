@@ -11,6 +11,11 @@ namespace CSharpIntermediate
             
             Person person = Person.Parse("test");
             person.Introduce("person");
+
+            person.SetName("dude");
+            Console.WriteLine(person.GetName());
+
+
             Customer customer = new Customer(2, "person who shops");
 
             customer.Orders.Add(new Order());

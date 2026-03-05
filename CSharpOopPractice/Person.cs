@@ -2,9 +2,22 @@ namespace CSharpIntermediate
 {
     public class Person
     {
-        public string Name = "";
+        private string Name = "";
         public string FavoriteColor = "";
         public string Nickname = "";
+
+        public void SetName(string name)
+        {
+            if (!String.IsNullOrEmpty(name))
+            {
+                this.Name = name;
+            }
+        }
+
+        public string GetName()
+        {
+            return Name;
+        }
 
         public void Introduce(string to)
         {
