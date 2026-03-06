@@ -2,34 +2,32 @@ namespace CSharpIntermediate
 {
     public class Person
     {
-        private string Name = "";
-        public string FavoriteColor = "";
-        public string Nickname = "";
+        private string _name = "";
+        public string _favoriteColor = "";
+
+        public Person(string name)
+        {
+            SetName(name);
+        }
+    
 
         public void SetName(string name)
         {
             if (!String.IsNullOrEmpty(name))
             {
-                this.Name = name;
+                this._name = name;
             }
         }
 
         public string GetName()
         {
-            return Name;
+            return _name;
         }
 
         public void Introduce(string to)
         {
-            Console.WriteLine("Hi {0}, I am {1}", to, Name);
+            Console.WriteLine("Hi {0}, I am {1}", to, _name);
         }
 
-        public static Person Parse(string str)
-        {
-            Person person = new Person();
-            person.Name = str;
-
-            return person;
-        }
     }
 }

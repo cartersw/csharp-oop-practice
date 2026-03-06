@@ -9,7 +9,7 @@ namespace CSharpIntermediate
         {
 
             
-            Person person = Person.Parse("test");
+            Person person = new Person("newguy");
             person.Introduce("person");
 
             person.SetName("dude");
@@ -27,14 +27,6 @@ namespace CSharpIntermediate
             Console.WriteLine(customer.Id + " " + customer.Name);
             Console.WriteLine(customer.Orders.Count);
 
-            //object initializer
-            Person person1 = new Person
-            {
-                FavoriteColor = "red",
-                Nickname = "joe"
-            };
-
-            Console.WriteLine("2nd person fav color is " + person1.FavoriteColor);
 
             int result = WeirdCalculator.Add(1, 2, 3, 4);
             Console.WriteLine(result);
