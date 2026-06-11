@@ -4,30 +4,30 @@ namespace CSharpIntermediate
     {
         public string Title {get; set;}
         public string Description {get; set;}
-        public DateTime Date {get; private set;}
-        public int Vote {get; private set;}
+        public DateTime CreatedAt {get; private set;}
+        public int Votes {get; private set;}
 
-        public Post(string title)
+        public Post(string title, string description)
         {
             Title = title;
-            Description = "";
-            Date = DateTime.Now;
+            Description = description;
+            CreatedAt = DateTime.Now;
         }
 
         public void Upvote()
         {
-            Vote += 1;
+            Votes += 1;
         }
 
         public void Downvote()
         {
-            Vote -= 1;
+            Votes -= 1;
         }
 
         public void Show()
         {
             Console.WriteLine(
-                Title + "\n" + Description + "\n" + Vote + "\nPosted: " + Date
+                Title + "\n" + Description + "\n" + Votes + "\nPosted: " + CreatedAt
             );
         }
     }

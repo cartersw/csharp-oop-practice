@@ -93,10 +93,10 @@ namespace CSharpIntermediate
             Console.WriteLine(stopwatch.Stop());
             Console.WriteLine(stopwatch.Duration);
 
-            Post post = new Post("Test");
+            Post post = new Post("Test", "new post test");
 
 
-            post.Description = "new post test";
+
 
             post.Upvote();
             post.Upvote();
