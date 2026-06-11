@@ -1,13 +1,17 @@
 ﻿using System.Drawing;
+using System.Threading.Tasks;
 
 namespace CSharpIntermediate
 {
 
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+            
+            /*
 
+            // initial class practice
             
             Person person = new Person("newguy");
             person.Introduce("person");
@@ -65,6 +69,24 @@ namespace CSharpIntermediate
                 Console.WriteLine("Conversion failed");
             }
 
+            */
+
+
+            // exercises section 2
+
+
+            Stopwatch stopwatch = new Stopwatch();
+            // stop without starting stopwatch.Stop();
+            stopwatch.Start();
+            // start after already starting stopwatch.Start();
+
+            await Task.Delay(1000);
+            Console.WriteLine(stopwatch.Stop());
+            stopwatch.Start();
+            await Task.Delay(500);
+            Console.WriteLine(stopwatch.Stop());
+
+            
 
 
         }
