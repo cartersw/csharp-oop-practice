@@ -44,8 +44,8 @@ namespace CSharpIntermediate
                 throw new InvalidOperationException("Stopwatch not started");
             }
             running = false;
-            Duration = DateTime.Now - startTime;
-            return Duration;
+            duration = DateTime.Now - startTime;
+            return duration;
         }
     }
 }
