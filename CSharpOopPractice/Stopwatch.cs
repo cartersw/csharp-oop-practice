@@ -4,6 +4,30 @@ namespace CSharpIntermediate
     {
         private DateTime startTime;
         private bool running = false;
+        private TimeSpan duration;
+        public TimeSpan Duration
+        {
+            get
+            {
+                if(running)
+                {
+                    return DateTime.Now - startTime;
+                }
+                else
+                {
+                    return duration;
+                }
+            }
+            private set
+            {
+                duration = value;
+            }
+        }
+
+        public Stopwatch()
+        {
+            duration = TimeSpan.Zero;
+        }
         public void Start()
         {
             if (running)
@@ -20,8 +44,8 @@ namespace CSharpIntermediate
                 throw new InvalidOperationException("Stopwatch not started");
             }
             running = false;
-            TimeSpan duration = DateTime.Now - startTime;
-            return duration;
+            Duration = DateTime.Now - startTime;
+            return Duration;
         }
     }
 }

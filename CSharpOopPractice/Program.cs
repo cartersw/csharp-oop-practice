@@ -77,14 +77,21 @@ namespace CSharpIntermediate
 
             Stopwatch stopwatch = new Stopwatch();
             // stop without starting stopwatch.Stop();
+            Console.WriteLine(stopwatch.Duration);
             stopwatch.Start();
             // start after already starting stopwatch.Start();
-
+            
             await Task.Delay(1000);
-            Console.WriteLine(stopwatch.Stop());
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(stopwatch.Duration);
+            }
+            stopwatch.Stop();
+            Console.WriteLine(stopwatch.Duration);
             stopwatch.Start();
             await Task.Delay(500);
             Console.WriteLine(stopwatch.Stop());
+            Console.WriteLine(stopwatch.Duration);
 
             
 
