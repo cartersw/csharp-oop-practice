@@ -113,6 +113,14 @@ namespace CSharpIntermediate
             Text text = new Text();
             text.Paste();
 
+            DbMigrator dbMigrator = new DbMigrator(new Logger());
+            Logger logger = new Logger();
+            Installer installer = new Installer(logger);
+
+            dbMigrator.Migrate();
+            installer.Install();
+
+
             
 
 
