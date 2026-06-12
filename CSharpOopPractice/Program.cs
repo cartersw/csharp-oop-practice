@@ -71,6 +71,7 @@ namespace CSharpIntermediate
 
             */
 
+            /*
 
             // exercises section 2
 
@@ -104,6 +105,13 @@ namespace CSharpIntermediate
 
 
             post.Show();
+
+            */
+
+            // section 3
+
+            Text text = new Text();
+            text.Paste();
 
             
 
