@@ -1,6 +1,6 @@
 namespace OtherLibrary
 {
-    public class RateCalculator
+    internal class RateCalculator
     {
         public int Calculate(Shopper shopper)
         {
