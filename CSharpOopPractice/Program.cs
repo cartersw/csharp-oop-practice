@@ -132,6 +132,7 @@ namespace CSharpIntermediate
             gold.OfferVoucher();
             // breaks
             // shopper.GetPoints();
+            // RateCalculator c = new RateCalculator();
 
 
 
