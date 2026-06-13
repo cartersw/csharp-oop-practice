@@ -162,6 +162,16 @@ namespace CSharpIntermediate
             list.Add(1);
             list.Add("test");
 
+            // exercise section 4
+
+            var stack = new EverythingStack();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
             
 
 
