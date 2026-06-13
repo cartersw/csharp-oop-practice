@@ -137,7 +137,24 @@ namespace CSharpIntermediate
 
             Car car = new Car("Default");
 
+            Label label = new Label();
+            Shape shape = label;
 
+            label.Width = 200;
+            shape.Width = 100;
+
+            Console.WriteLine(label.Width);
+
+            StreamReader reader = new StreamReader(new MemoryStream());
+
+            List<Shape> e3List = new List<Shape>();
+
+            e3List.Add(shape);
+            e3List.Add(label);
+
+            Shape sh = new Label();
+            Label la = (Label) sh;
+            la.FontSize = 1;
 
             
 
