@@ -124,6 +124,7 @@ namespace CSharpIntermediate
 
             */
 
+            
             // section 4
 
             Shopper shopper = new Shopper();
@@ -133,6 +134,8 @@ namespace CSharpIntermediate
             // breaks
             // shopper.GetPoints();
             // RateCalculator c = new RateCalculator();
+
+            Car car = new Car("Default");
 
 
 
