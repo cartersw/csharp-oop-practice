@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Threading.Tasks;
+using OtherLibrary;
 
 namespace CSharpIntermediate
 {
@@ -108,6 +109,7 @@ namespace CSharpIntermediate
 
             */
 
+            /*
             // section 3
 
             Text text = new Text();
@@ -119,6 +121,18 @@ namespace CSharpIntermediate
 
             dbMigrator.Migrate();
             installer.Install();
+
+            */
+
+            // section 4
+
+            Shopper shopper = new Shopper();
+            shopper.Promote();
+            GoldShopper gold = new GoldShopper();
+            gold.OfferVoucher();
+            // breaks
+            // shopper.GetPoints();
+
 
 
             
