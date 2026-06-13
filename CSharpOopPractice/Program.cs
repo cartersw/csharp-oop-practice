@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Collections;
 using System.Threading.Tasks;
 using OtherLibrary;
 
@@ -155,6 +156,11 @@ namespace CSharpIntermediate
             Shape sh = new Label();
             Label la = (Label) sh;
             la.FontSize = 1;
+
+            ArrayList list = new ArrayList();
+            //boxing occurs
+            list.Add(1);
+            list.Add("test");
 
             
 
