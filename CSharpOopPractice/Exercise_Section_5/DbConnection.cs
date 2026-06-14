@@ -2,8 +2,9 @@ namespace CSharpIntermediate
 {
     public abstract class DbConnection
     {
-        public string ConnectionString { get; set; }    
-        public TimeSpan Timeout { get; set; }
+        protected string ConnectionString { get; set; }    
+        protected TimeSpan Timeout { get; set; }
+        
 
         public DbConnection(string connectionString)
         {
@@ -11,6 +12,8 @@ namespace CSharpIntermediate
             {
                 throw new InvalidOperationException("Connection string is null or empty");
             }
+
+            Timeout = TimeSpan.FromSeconds(15);
 
             ConnectionString = connectionString;
 

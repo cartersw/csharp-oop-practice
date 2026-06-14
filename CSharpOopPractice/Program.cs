@@ -193,12 +193,15 @@ namespace CSharpIntermediate
 
             Canvas.DrawOtherShapes(list5);
 
+            OracleConnection oc = new OracleConnection("1234");
 
+            oc.Open();
+            oc.Close();
 
-
+            SqlConnection sq = new SqlConnection("12345");
             
-
-            
+            sq.Open();
+            sq.Close();
 
 
         }
