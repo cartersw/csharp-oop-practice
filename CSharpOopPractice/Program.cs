@@ -128,6 +128,8 @@ namespace CSharpIntermediate
             
             // section 4
 
+            /*
+
             Shopper shopper = new Shopper();
             shopper.Promote();
             GoldShopper gold = new GoldShopper();
@@ -177,6 +179,22 @@ namespace CSharpIntermediate
             stack.Push(3);
 
             stack.Clear();
+
+            */
+
+            //section 5
+
+            List<OtherShape> list5 = new List<OtherShape>();
+
+            list5.Add(new Cube());
+            list5.Add(new OtherShape());
+            list5.Add(new Sphere());
+
+            Canvas.DrawOtherShapes(list5);
+
+
+
+
             
 
             
