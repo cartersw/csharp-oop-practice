@@ -187,7 +187,6 @@ namespace CSharpIntermediate
             List<OtherShape> list5 = new List<OtherShape>();
 
             list5.Add(new Cube());
-            list5.Add(new OtherShape());
             list5.Add(new Sphere());
 
             Canvas.DrawOtherShapes(list5);
