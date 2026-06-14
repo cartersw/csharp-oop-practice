@@ -24,14 +24,6 @@ namespace CSharpIntermediate
 
             Customer customer = new Customer(2, "person who shops");
 
-            customer.Orders.Add(new Order());
-            customer.Orders.Add(new Order());
-            customer.Orders.Add(new Order());
-
-            Console.WriteLine(customer.Orders.Count);
-
-            Console.WriteLine(customer.Id + " " + customer.Name);
-            Console.WriteLine(customer.Orders.Count);
 
 
             int result = WeirdCalculator.Add(1, 2, 3, 4);
