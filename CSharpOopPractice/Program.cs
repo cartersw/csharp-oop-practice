@@ -128,8 +128,8 @@ namespace CSharpIntermediate
             
             // section 4
 
+            
             /*
-
             Shopper shopper = new Shopper();
             shopper.Promote();
             GoldShopper gold = new GoldShopper();
@@ -181,6 +181,8 @@ namespace CSharpIntermediate
             stack.Clear();
 
             */
+
+            
 
             //section 5
 
