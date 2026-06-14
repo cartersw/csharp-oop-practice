@@ -203,6 +203,13 @@ namespace CSharpIntermediate
             sq.Open();
             sq.Close();
 
+            DbCommand sqlCommand = new DbCommand(sq);
+            sqlCommand.Execute("select * from table");
+            DbCommand oracleCommand = new DbCommand(oc);
+            oracleCommand.Execute("select * from table (but in an oracle database)");
+
+            
+
 
         }
     }
