@@ -3,7 +3,7 @@ namespace CSharpIntermediate
     public class DbCommand
     {
         private readonly DbConnection _dbConnection;
-        private string _command {get; set;}
+        private readonly string _command;
         public DbCommand(DbConnection dbConnection, string command)
         {
             
