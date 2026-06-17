@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="CSharpOopPractice.Tests/CSharpOopPractice.Tests.csproj" />
+  <Project Path="CSharpOopPractice/CSharpOopPractice.csproj" />
+  <Project Path="OtherLibrary/OtherLibrary.csproj" />
+  <Project Path="WpfApp/WpfApp.csproj" />
 </Solution>

@@ -178,6 +178,8 @@ namespace CSharpIntermediate
 
             //section 5
 
+            /*
+
             List<OtherShape> list5 = new List<OtherShape>();
 
             list5.Add(new Cube());
@@ -199,6 +201,10 @@ namespace CSharpIntermediate
             sqlCommand.Execute();
             DbCommand oracleCommand = new DbCommand(oc, "select * from table (but in an oracle database)");
             oracleCommand.Execute();
+
+            */
+
+            
 
             
 

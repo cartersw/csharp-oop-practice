@@ -1,6 +1,6 @@
 namespace CSharpIntermediate
 {
-    public class ShippingCalculator
+    public class ShippingCalculator : IShippingCalculator
     {
         public float CalculateShipping(Order order)
         {
