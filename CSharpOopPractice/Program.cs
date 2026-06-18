@@ -207,6 +207,9 @@ namespace CSharpIntermediate
 
             OrderProcessor order = new OrderProcessor(new ShippingCalculator());
 
+
+            OtherDbMigrator otherDbMigrator = new OtherDbMigrator(new FileLogger("log.txt"));
+            otherDbMigrator.Migrate();
             
 
             
