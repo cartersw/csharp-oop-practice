@@ -210,6 +210,14 @@ namespace CSharpIntermediate
 
             OtherDbMigrator otherDbMigrator = new OtherDbMigrator(new FileLogger("log.txt"));
             otherDbMigrator.Migrate();
+
+            VideoEncoder encoder = new VideoEncoder();
+            encoder.RegisterNotificationChannel(new MailNotificationChannel());
+            encoder.RegisterNotificationChannel(new SmsNotificationChannel());
+
+
+            encoder.Encode(new Video());
+
             
 
             
