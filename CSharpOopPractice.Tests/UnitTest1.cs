@@ -30,6 +30,8 @@ public class OrderProcessorTests
         orderProcessor.Process(order);
 
         Assert.True(order.IsShipped);
+        Assert.Equal(10, order.Shipment.Cost);
+        Assert.Equal(DateTime.Today.AddDays(1), order.Shipment.ShippingDate);
     }
 
 }
