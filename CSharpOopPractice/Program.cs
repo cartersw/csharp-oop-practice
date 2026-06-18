@@ -10,7 +10,7 @@ namespace CSharpIntermediate
     {
         static async Task Main(string[] args)
         {
-            
+
             /*
 
             // initial class practice
@@ -117,10 +117,10 @@ namespace CSharpIntermediate
 
             */
 
-            
+
             // section 4
 
-            
+
             /*
             Shopper shopper = new Shopper();
             shopper.Promote();
@@ -174,7 +174,7 @@ namespace CSharpIntermediate
 
             */
 
-            
+
 
             //section 5
 
@@ -203,6 +203,9 @@ namespace CSharpIntermediate
             oracleCommand.Execute();
 
             */
+
+
+            OrderProcessor order = new OrderProcessor(new ShippingCalculator());
 
             
 

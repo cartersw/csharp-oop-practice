@@ -2,14 +2,16 @@ namespace CSharpIntermediate
 {
     public class Order
     {
-        public int TotalPrice { get; set; } 
-        public bool IsShipped { get; set; }
-        public Shipment Shipment { get; set; }  
-
-        public Order(Shipment shipment)
+        public int ID { get; set; }
+        public float TotalPrice { get; set; }
+        public Shipment Shipment { get; set; }
+        public DateTime DatePlaced { get; set; }
+        public bool IsShipped
         {
-            this.Shipment = shipment;
+            get { return Shipment != null; }
         }
+       
+        
 
     }
 }
