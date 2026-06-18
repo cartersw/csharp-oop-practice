@@ -205,6 +205,9 @@ namespace CSharpIntermediate
             */
 
 
+            // section 6
+
+            /*
             OrderProcessor order = new OrderProcessor(new ShippingCalculator());
 
 
@@ -218,8 +221,20 @@ namespace CSharpIntermediate
 
             encoder.Encode(new Video());
 
-            
+            */
 
+            // exercises section 6
+
+
+
+
+            Workflow workflow = new Workflow();
+
+            workflow.AddActivity(new FillCatFoodBowl());
+            workflow.AddActivity(new FillCatWaterBowl());
+
+            
+            WorkflowEngine.Run(workflow);
             
 
 
